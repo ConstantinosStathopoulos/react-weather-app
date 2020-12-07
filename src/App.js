@@ -43,7 +43,6 @@ function App() {
     const weatherIcon = (d) => {
         //get name from api
         let iconName = weather.weather[0].icon;
-        console.log (iconName);
 
         return `${iconName}.png`
     }
