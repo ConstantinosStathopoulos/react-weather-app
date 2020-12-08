@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import sun from './static/sun.png';
+
 
 
 const api = {
