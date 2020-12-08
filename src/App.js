@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 
 
@@ -73,13 +73,14 @@ function App() {
                 <div className="weather-box">
 
                     <div className="temperature">{Math.round(weather.main.temp)}°C </div>
+                    <div className="weather-icon"> <img src={process.env.PUBLIC_URL + `/assets/${weatherIcon()}`} alt="weather icon"/> </div>
                     <div className="realfeel">
                         <div>Feels like {Math.round(weather.main.feels_like)}°C</div>
                         <div>Min {Math.round(weather.main.temp_min)}°C</div>
                         <div>Max {Math.round(weather.main.temp_max)}°C</div>
                     </div>
                     <div className="weather">{weather.weather[0].description}</div>
-                    <div className="weather-icon"><img src={`assets/${weatherIcon()}`} alt="weather icon"/> </div>
+
 
 
                 </div>
